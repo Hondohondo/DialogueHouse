@@ -1,8 +1,7 @@
 .row {
     max-width: $grid-width; //max means if we have enough available space then it will have that width specified but if not (smaller than that) then it will have 100% of the available space
     // background-color: #eee; //nice grey
-    margin: 0 auto; //center block element inside another block element
-    
+    // margin: 0 auto; //center block element inside another block element
 
     //.row:last-child -- only select last child
     //.row:not
@@ -14,7 +13,7 @@
 
     //* = any,  ^ = start with,  $ = end with
     [class^="col-"] {
-        // background-color: orange;
+        background-color: orange;
         float: left;
 
         &:not(:last-child) {
@@ -47,4 +46,37 @@
         width: calc( 3 * ((100% - 3 * #{$gutter-horizontal}) / 4 ) + 2 * #{$gutter-horizontal} );
     }
 
+}
+
+.expand {
+    max-width: 100% !important; 
+    // width: 100% !important;
+
+    &:not(:last-child) { //everything except last child
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+
+    // My added grids --- begins here
+
+    .col-0-of-3 {
+        width: calc( (100% - 2 * #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
+        margin-right: 0 !important;
+        background-color: orange;
+        float: left;
+        // margin-right: $gutter-horizontal;
+
+    }
+
+    .col-3-of-3 {
+        width: calc( 2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal} );
+        background-color: green;
+        float: left;
+    }
+
+
+
+    // My added grids --- ends here
 }

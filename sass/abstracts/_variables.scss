@@ -7,6 +7,8 @@ Dark green: #28b485
 
 */
 
+$color-teal: #009999;
+
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
@@ -23,6 +25,7 @@ $default-font-size: 1.6rem; //default font size for the whole website text...lik
 
 // GRID
 $grid-width: 114rem;
+// $grid-width: 100%;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem; //space in between columns
 

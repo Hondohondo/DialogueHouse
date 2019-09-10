@@ -54,32 +54,26 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  color: #009999;
+  backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    font-size: 3rem;
     /* 
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
   .heading-primary--sub {
     display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out; }
+    font-size: 2.6rem;
+    margin-top: -1rem;
+    float: right; }
+
+.emphasize {
+  font-style: italic; }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -180,8 +174,7 @@ body {
   transform: translateY(0); }
 
 .row {
-  max-width: 114rem;
-  margin: 0 auto; }
+  max-width: 114rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
@@ -189,6 +182,7 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
+    background-color: orange;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -205,27 +199,42 @@ body {
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 6rem) / 4 ) + 2 * 6rem); }
 
+.expand {
+  max-width: 100% !important; }
+  .expand:not(:last-child) {
+    margin-bottom: 8rem; }
+  .expand::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .expand .col-0-of-3 {
+    width: calc( (100% - 2 * 6rem) / 3 + 6rem);
+    margin-right: 0 !important;
+    background-color: orange;
+    float: left; }
+  .expand .col-3-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
+    background-color: green;
+    float: left; }
+
 .header {
   height: 95vh;
-  /* background-image: url(../img/hero.jpg); */
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative; }
+  /* background-image: url(../img/hero.jpg); */ }
   .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
+    float: left;
+    margin-top: 4rem;
+    margin-left: 2rem; }
   .header__logo {
-    height: 3.5rem; }
+    height: 12rem; }
   .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* background-color: red; */
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    float: right;
+    margin-top: 6rem;
+    margin-right: 1rem; }
 
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0; }
+
+.section-content {
+  height: 95vh;
+  background-image: url(../img/hero.jpg); }
