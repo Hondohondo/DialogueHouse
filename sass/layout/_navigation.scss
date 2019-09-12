@@ -1,0 +1,93 @@
+.navigation {
+
+    &__checkbox {
+
+    }
+
+    &__button {
+
+    }
+
+    &__background {
+
+    }
+
+    &__nav {
+
+        // height: 100vh;
+        // width: 100%;
+        // position: fixed;
+        // top: 0;
+        // right: 0;
+        // z-index: 10;
+
+    }
+
+    &__list {
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        list-style: none;
+        // text-align: center;
+        margin-left: 2.5rem;
+        margin-top: 5rem;
+
+    }
+
+    &__item {
+        margin: 1rem;
+        
+        &--nested {
+
+            margin-left: 10rem;
+            font-size: 2.2rem;
+            
+            text-decoration: none;
+
+            li {
+                a {
+                    &:link,
+                    &:visited {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: $color-teal;
+                        padding: .5rem .5rem;
+
+                    }
+
+                    &:hover,
+                    &:active {
+                        
+                    }
+                   
+                    
+                }
+            }
+
+        }
+        
+    }
+
+    &__link {
+       
+            // cursor: default;
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 2.4rem;
+            font-weight: 700;
+            // color: $color-white;
+            color: $color-teal;
+            text-decoration: none;
+            text-transform: uppercase;
+
+        &:hover,
+        &:active {
+            
+            
+        }
+       
+        
+    }
+
+}

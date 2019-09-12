@@ -64,16 +64,20 @@
     .col-0-of-3 {
         width: calc( (100% - 2 * #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
         margin-right: 0 !important;
-        background-color: orange;
+        background-color: #ffffff;
         float: left;
+        // position: fixed;
         // margin-right: $gutter-horizontal;
+
+        height: 120%;
 
     }
 
     .col-3-of-3 {
         width: calc( 2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal} );
-        background-color: green;
+        background-color: #9b1919;
         float: left;
+        margin-left: calc( (100% - 2 * #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
     }
 
 
