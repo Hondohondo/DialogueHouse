@@ -63,8 +63,9 @@
 
     .col-0-of-3 {
         width: calc( (100% - 2 * #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
-        margin-right: 0 !important;
-        background-color: #ffffff;
+        //margin-right: 0 !important;
+        //background-color: #ffffff;
+        background-color: aquamarine;
         float: left;
         // position: fixed;
         // margin-right: $gutter-horizontal;
@@ -77,7 +78,7 @@
         width: calc( 2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal} );
         background-color: #9b1919;
         float: left;
-        margin-left: calc( (100% - 2 * #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
+        //margin-left: calc( (100% - 2 * #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
     }
 
 
