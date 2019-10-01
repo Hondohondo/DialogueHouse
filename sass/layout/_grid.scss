@@ -6,14 +6,15 @@
     //.row:last-child -- only select last child
     //.row:not
     &:not(:last-child) { //everything except last child
-        margin-bottom: $gutter-vertical;
+        // margin-bottom: $gutter-vertical;
+        margin-bottom: 4rem;
     }
 
     @include clearfix;
 
     //* = any,  ^ = start with,  $ = end with
     [class^="col-"] {
-        background-color: orange;
+        // background-color: orange;
         float: left;
 
         &:not(:last-child) {

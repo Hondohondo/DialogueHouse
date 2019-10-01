@@ -156,15 +156,17 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #55c57a;
+  color: teal;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #55c57a;
+  border-bottom: 1px solid #008080;
   padding: 3px;
-  transition: all .2s; }
+  transition: all .2s;
+  margin-left: 4rem;
+  margin-top: 2rem; }
 
 .btn-text:hover {
-  background-color: #55c57a;
+  background-color: #008080;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -176,13 +178,12 @@ body {
 .row {
   max-width: 114rem; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 4rem; }
   .row::after {
     content: "";
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orange;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -273,3 +274,37 @@ body {
   background-image: url(../img/hero2.jpg);
   background-size: cover;
   background-position: top; }
+
+.section-workshop {
+  padding: 7%;
+  background-color: #ffffff; }
+  .section-workshop .entry-text {
+    padding-bottom: 5rem; }
+    .section-workshop .entry-text .heading-five {
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: midnightblue;
+      margin-bottom: 0.6rem; }
+    .section-workshop .entry-text .heading-one {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: teal; }
+  .section-workshop .entry-reasons .entry-reasons-container {
+    margin-left: 4rem;
+    position: relative; }
+    .section-workshop .entry-reasons .entry-reasons-container .icon-heart {
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      top: -.4rem;
+      left: -4rem;
+      color: teal;
+      font-size: 2.6rem;
+      text-align: center; }
+    .section-workshop .entry-reasons .entry-reasons-container .heading-four {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      color: midnightblue; }
