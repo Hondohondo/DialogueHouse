@@ -1,7 +1,7 @@
 .row {
     max-width: $grid-width; //max means if we have enough available space then it will have that width specified but if not (smaller than that) then it will have 100% of the available space
     // background-color: #eee; //nice grey
-    // margin: 0 auto; //center block element inside another block element
+     margin: 0 auto; //center block element inside another block element
 
     //.row:last-child -- only select last child
     //.row:not

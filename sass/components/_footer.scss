@@ -1,0 +1,140 @@
+.footer {
+    background-color: #005050; //darker teal
+    text-align: center;
+    // background-color: darkslategrey;
+    // background-color: #142e14;
+  //  background-color: darkcyan;
+   
+    // padding: 10rem 0;
+    // font-size: 1.4rem;
+
+    font-size: $default-font-size;
+    padding: 6rem;
+    color: #929292;
+    // color: #f7f7f7;
+    p {
+        margin-bottom: .3rem;
+        // line-height: 2rem;
+    }
+
+    &__logo-box {
+        text-align: left;
+        margin-bottom: 2rem;
+
+        // img {
+        //     height: 8rem;
+        //     margin-bottom: 2rem;
+        //     float: left;
+        // }
+
+    }
+
+    &__logo {
+        width: 8rem;
+        height: auto;
+        // float: left;
+        // margin-bottom: 2rem;
+        margin-left: 8rem;
+
+    }
+
+    &__navigation {
+
+        border-top: 1px solid #eee;
+        padding-top: 2rem;
+        display: inline-block; //all covers the width of the element, not 100%
+
+    }
+
+    &__list {
+        list-style: none;
+        float: right;
+    }
+
+    &__item {
+        display: inline-block;
+        font-size: 3.5rem;
+        
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            color: #eeeeee;
+            background-color: #005050; 
+            // text-decoration: none;
+            // text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+
+            // color: #666;
+            // background-color: #333;
+            height: 6.6rem;
+            width: 6.6rem;
+            border-radius: 50%;
+            padding-top: 1.1rem;
+            
+        }
+
+        &:hover,
+        &:active {
+            // color: teal;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            
+        }
+
+        &:hover .icon-mail {
+            color: teal;
+        }
+
+        &:hover .icon-fb {
+            color: #3b5998;
+        }
+
+        &:hover .icon-tw {
+            color: #00aced;
+        }
+
+    }
+
+    &__copyright {
+        color: #f7f7f7;
+        float: right;
+        width: 80%;
+        padding-top: 2rem;
+    }
+}
+
+.icon-mail,
+.icon-fb,
+.icon-tw {
+    transition: color 0.2s;
+}
+
+.icon-moyo {
+    vertical-align: text-bottom;
+    color: #ff3030;
+    margin: 0 .2rem;
+}
+
+.para_link:link,
+.para_link:visited {
+    color: #999;
+    transition: color 0.2s;
+}
+
+
+.para_link:hover,
+.para_link:active {
+    color: #ccc;
+}
+
+
+
+
+
+
