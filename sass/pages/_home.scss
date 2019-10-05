@@ -70,3 +70,46 @@
     }
     
 }
+
+.section-the-method {
+   // background: #edeeed url(../img/themethod.jpg) no-repeat center top;
+    height: 100vh;
+    background-image: linear-gradient(-105deg, 
+                    rgba(255, 255, 255, 0.9) 0%,
+                     rgba(255, 255, 255, 0.9) 50%,
+                     transparent 80%),
+                     url(../img/bench.jpg);
+    background-size: cover;
+
+    .method-panel {
+        padding: 9% 7%;
+
+        .btn-text {
+            margin-left: 0;
+        }
+    }
+
+    .heading-five {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: midnightblue;
+        margin-bottom: .6rem;
+    }
+
+    .heading-one {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: $default-font-size;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        // color: #eeeeee;
+        color: teal;
+    }
+
+    .paragraph {
+        color: #5d6e73;
+       
+    }
+
+}

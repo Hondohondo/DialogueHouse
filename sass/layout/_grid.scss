@@ -54,7 +54,7 @@
     // width: 100% !important;
 
     &:not(:last-child) { //everything except last child
-        margin-bottom: $gutter-vertical;
+        // margin-bottom: $gutter-vertical;
     }
 
     @include clearfix;
@@ -70,8 +70,8 @@
         float: left;
         // position: fixed;
         // margin-right: $gutter-horizontal;
-
-        height: 120%;
+        height: 244rem;
+        // height: 120%;
 
     }
 
@@ -79,7 +79,7 @@
         width: calc( 2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal} );
         background-color: #9b1919;
         float: left;
-        //margin-left: calc( (100% - 2 * #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
+        // margin-left: calc( (100% - 2 * #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
     }
 
 

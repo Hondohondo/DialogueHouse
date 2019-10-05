@@ -42,10 +42,12 @@ Dark green: #28b485
   box-sizing: inherit; }
 
 html {
+  height: 100%;
   font-size: 62.5%;
   /*  10px/16   */ }
 
 body {
+  height: 100%;
   box-sizing: border-box; }
 
 body {
@@ -272,8 +274,6 @@ body {
 
 .expand {
   max-width: 100% !important; }
-  .expand:not(:last-child) {
-    margin-bottom: 8rem; }
   .expand::after {
     content: "";
     display: table;
@@ -282,7 +282,7 @@ body {
     width: calc( (100% - 2 * 6rem) / 3 + 6rem);
     background-color: aquamarine;
     float: left;
-    height: 120%; }
+    height: 244rem; }
   .expand .col-3-of-3 {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
     background-color: #9b1919;
@@ -378,3 +378,27 @@ body {
       font-size: 1.7rem;
       margin-bottom: 1rem;
       color: midnightblue; }
+
+.section-the-method {
+  height: 100vh;
+  background-image: linear-gradient(-105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 80%), url(../img/bench.jpg);
+  background-size: cover; }
+  .section-the-method .method-panel {
+    padding: 9% 7%; }
+    .section-the-method .method-panel .btn-text {
+      margin-left: 0; }
+  .section-the-method .heading-five {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: midnightblue;
+    margin-bottom: .6rem; }
+  .section-the-method .heading-one {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: teal; }
+  .section-the-method .paragraph {
+    color: #5d6e73; }
